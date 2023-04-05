@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../assets/fonts/OpenSans-Medium.ttf);
+    src: url(../assets/fonts/OpenSans-Light.ttf);
+    src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+body {
+    font-family: 'Open Sans';
+}
+.flex{
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+p {
+    margin-right: 31px;
+}
+
+nav {
+    background-color: #E8EEF1;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.email {
+    color: #005DB4;
+}

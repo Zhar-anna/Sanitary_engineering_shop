@@ -43,16 +43,16 @@ module.exports = {
         use: "url-loader?limit=10000",
       },
       {
-        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-        use: "file-loader",
-      },
-      {
         test: /\.jpg/,
         type: 'asset/resource', 
       },
       {
         test: /\.png/,
         type: 'asset/resource', 
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        type: 'asset/inline',
       },
     ],
   },

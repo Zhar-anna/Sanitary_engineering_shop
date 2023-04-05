@@ -5,41 +5,51 @@
         <meta name="viewport"  initial-scale=1.0>
         <title>Sanitary_engeneering_shop</title>
     </head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@300;500&display=swap');
+      </style>
     <body>
         <header>
               <nav>
-                <ul>
-                  <li>О компании</li>
-                  <li>Продукция</li>
-                  <li>Распродажа</li>
-                  <li>Акции & новости</li>
-                  <li>Оптовые продажи</li>
-                  <li>Доставка</li>
-                  <li>Контакты</li>
-                  <li>+7 (968) 546-33-79</li>
-                  <li>+7 (968) 546-33-79</li>
-                  <li>info@di-project.studio</li>
-                </ul>
+                <div class="flex space-between">
+                  <div class="flex space-between">
+                    <p>О компании</p>
+                    <p>Продукция V</p>
+                    <p>Распродажа</p>
+                    <p>Акции & новости</p>
+                    <p>Оптовые продажи</p>
+                    <p>Доставка</p>
+                    <p>Контакты</p>
+                    </div>
+                  <div class="flex space-between">
+                    <p>+7 (968) 546-33-79</p>
+                    <p>+7 (968) 546-33-79</p>
+                    <p class="email">info@di-project.studio</p>
+                  </div>
+                </div>
               </nav>
           </header>
-          <section>
-            <img>
-            <button></button>
+          <section class="flex middle">
+            <div class="shoop-emblem">
+              <img class="emblem">
+              САНТЕХПРОМ РЕМОНТ
+            </div>
+            <button class="catalog">Каталог</button>
             <form></form>
           </section>
           <main>
-            <section class="flex">
-                <div class="main-image"></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <section class="flex cards">
+                <div class="main-image"><img class="main"></div>
+                <div class="news"><img class="news-image"></div>
+                <div class="sales flex"><img class="percent-image"><div><h2>Акции</h2><h4>Распродажи и акции в одном месте</h4></div></div>
+                <div class="border"><h5>Биметрические радиаторы</h5><img class="bimetr-image"></div>
+                <div class="border"><h5>Алюминиевые радиаторы</h5><img class="alumina-image"></div>
+                <div class="border"><h5>Стальные панельные радиаторы</h5><img class="steel-image"></div>
+                <div class="border"><h5>Стальные трубчатые радиаторы</h5><img class="steel-tube-image"></div>
+                <div class="border"><h5>Конверторы встраиваемые</h5><img class="convectors"></div>
+                <div class="border"><h5>Конверторы настенные</h5><img class="convectors-wall"></div>
+                <div class="border"><h5>Конверторы напольные</h5><img class="convectors-floor"></div>
+                <div class="border"><h5>Кожухи на конвекторы</h5><img class="casing-image"></div>
             </section>
           </main>
     </body>
