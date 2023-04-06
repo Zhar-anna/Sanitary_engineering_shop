@@ -4,9 +4,38 @@
     src: url(../assets/fonts/OpenSans-Light.ttf);
     src: url(../assets/fonts/OpenSans-Regular.ttf);
 }
+@media (min-width:1024px) {
+    nav {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+    }
+    p {
+        margin-right: 18px;
+    }
+    .fs10 {
+        font-size: 10px;
+    }
+}
+@media (min-width: 1400px) {
+nav {
+    padding-left: 160px;
+    padding-right: 160px;
+        font-size: 14px;
+        font-weight: 400;
+
+        line-height: 19px;
+}
+p{
+    margin-right: 31px;
+}
+}
 body {
     font-family: 'Open Sans';
 }
+
 .flex{
     display: flex;
 }
@@ -16,16 +45,14 @@ body {
 }
 
 p {
-    margin-right: 31px;
+
+    white-space: nowrap;
 }
 
 nav {
     background-color: #E8EEF1;
-    font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
+
 }
 
 .email {

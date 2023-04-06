@@ -2,17 +2,92 @@
     font-family: 'Open Sans';
     src: url(../assets/fonts/OpenSans-Medium.ttf);
 }
+@media (min-width:1024px) {
+    .middle {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .search-input {
+        width: 259px;
+        height: 52px;
+    }
+    .basket {
+        width: 202px;
+        height: 53px;
+    }
+    .shoop-emblem {
+        width: 146px;
+        height: 53px;
+    }
+    .catalog {
+        width: 148px;
+        height: 53px;
+    }
+    .burger {
+        margin-right: 18.5px;
+    }
+}
+@media (min-width: 1400px) {
+    .middle {
+  padding-left: 160px;
+  padding-right: 160px;
+    }
+    .basket {
+        width: 200px;
+        height: 65px;
+    }
+    .burger {
+        margin-right: 23px;
+    }
+    .margin-right-20 {
+        margin-right: 20px;
+    }
+    .margin-left-20 {
+        margin-left: 20px;
+        margin-right: 23px;
+    }
+    .search-input {
+        width: 580px;
+        height: 66px;
+    }
+    .shoop-emblem {
+        height: 65px;
+        width: 181px;
+    }
+    .catalog {
+        width: 181px;
+        height: 65px;
+    }
+}
 
+.flex{
+    display: flex;
+}
 .middle {
     margin-top: 28px;
     margin-bottom: 28px;
+    justify-content: space-between;
+
 }
 
 .shoop-emblem {
     background-color: #005DB4;
     color: white;
-    height: 65px;
-    width: 181px;
+
+    border-radius: 7px;
+    padding-left: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding-23{
+    padding-top: 23px;
+    padding-bottom: 23px;
+    align-items: center;
+}
+
+.m4 {
+    margin-right: 4px;
 }
 
 .catalog {
@@ -21,4 +96,55 @@
     margin-left: 30px;
     border-radius: 7px;
     border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    border-bottom: 1px solid #EAEAEA;
+    padding-left: 15px;
+    padding-right: 26px;
+    color: #7C7B7B;
+    font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 30px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+[type='search']{
+    border: none;
+    outline: none;
+}
+
+.emblem {
+    width: 39.56px;
+height: 53.83px;
+margin-right: 8.11px;
+}
+
+.basket {
+    border: 1px solid #93B8DB;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 140%;
+color: #A4A4A3;
+padding-left: 16.5px;
+padding-right: 16.5px;
+white-space: nowrap;
+}
+.right-middle {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basket-image {
+    margin-right: 12px;
 }

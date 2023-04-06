@@ -10,11 +10,11 @@
       </style>
     <body>
         <header>
-              <nav>
+              <nav class="nav flex">
                 <div class="flex space-between">
                   <div class="flex space-between">
                     <p>О компании</p>
-                    <p>Продукция V</p>
+                    <p>Продукция V<img class="chevron"></p>
                     <p>Распродажа</p>
                     <p>Акции & новости</p>
                     <p>Оптовые продажи</p>
@@ -22,34 +22,66 @@
                     <p>Контакты</p>
                     </div>
                   <div class="flex space-between">
-                    <p>+7 (968) 546-33-79</p>
-                    <p>+7 (968) 546-33-79</p>
-                    <p class="email">info@di-project.studio</p>
+                    <p class="fs10">+7 (968) 546-33-79</p>
+                    <p class="fs10">+7 (968) 546-33-79</p>
+                    <p class="email fs10">info@di-project.studio</p>
                   </div>
                 </div>
               </nav>
           </header>
           <section class="flex middle">
-            <div class="shoop-emblem">
+            <div class="left-middle flex">
+              <div class="shoop-emblem flex">
               <img class="emblem">
               САНТЕХПРОМ РЕМОНТ
+              </div>
+              <button class="catalog flex"><img class="burger">Каталог</button>
+              <form>
+                <div class="search-input flex">
+                  <input type="search" placeholder="Поиск по сайту">
+                  <img class="search">
+                </div>
+              </form>
             </div>
-            <button class="catalog">Каталог</button>
-            <form></form>
+            <div class="right-middle flex">
+              <div class="flex padding-23 margin-right-20">
+                <img class="lines m4">
+                0
+              </div>
+              <img class="line padding-23">
+              <div class="flex padding-23 margin-left-20">
+                <img class="heart m4">
+                0
+              </div>
+              <div class="basket flex">
+                <img class="basket-image">
+                В корзине 0 товаров
+              </div>
+            </div>
           </section>
           <main>
             <section class="flex cards">
-                <div class="main-image"><img class="main"></div>
-                <div class="news"><img class="news-image"></div>
-                <div class="sales flex"><img class="percent-image"><div><h2>Акции</h2><h4>Распродажи и акции в одном месте</h4></div></div>
-                <div class="border"><h5>Биметрические радиаторы</h5><img class="bimetr-image"></div>
-                <div class="border"><h5>Алюминиевые радиаторы</h5><img class="alumina-image"></div>
-                <div class="border"><h5>Стальные панельные радиаторы</h5><img class="steel-image"></div>
-                <div class="border"><h5>Стальные трубчатые радиаторы</h5><img class="steel-tube-image"></div>
-                <div class="border"><h5>Конверторы встраиваемые</h5><img class="convectors"></div>
-                <div class="border"><h5>Конверторы настенные</h5><img class="convectors-wall"></div>
-                <div class="border"><h5>Конверторы напольные</h5><img class="convectors-floor"></div>
-                <div class="border"><h5>Кожухи на конвекторы</h5><img class="casing-image"></div>
+              <div class="main-image card"><img class="main"></div>
+              <div class="flex column">
+                <div class="news card">
+                  <img class="news-image">
+                </div>
+                <div class="sales flex card">
+                  <img class="percent-image">
+                  <div>
+                    <h2>Акции</h2>
+                    <h4>Распродажи и акции в одном месте</h4>
+                  </div>
+                </div>
+              </div>
+                <div class="border flex card"><h5>Биметрические радиаторы</h5><img class="bimetr-image"></div>
+                <div class="border flex card"><h5>Алюминиевые радиаторы</h5><img class="alumina-image"></div>
+                <div class="border flex card"><h5>Стальные панельные радиаторы</h5><img class="steel-image"></div>
+                <div class="border flex card"><h5>Стальные<br>трубчатые радиаторы</h5><img class="steel-tube-image"></div>
+                <div class="border flex card"><h5>Конверторы встраиваемые</h5><img class="convectors"></div>
+                <div class="border flex card"><h5>Конверторы<br>настенные</h5><img class="convectors-wall"></div>
+                <div class="border flex card"><h5>Конверторы<br>напольные</h5><img class="convectors-floor"></div>
+                <div class="border flex card"><h5>Кожухи на<br>конвекторы</h5><img class="casing-image"></div>
             </section>
           </main>
     </body>

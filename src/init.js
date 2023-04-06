@@ -10,6 +10,12 @@ import news from '../images/news.png';
 import percent from '../images/percent.png';
 import steelTube from '../images/steel-tube.png';
 import steel from '../images/steel.png';
+import search from '../images/search.png';
+import basket from '../images/cart-shopping.png';
+import heart from '../images/heart.png';
+import line from '../images/Line 1.png';
+import lines from '../images/align-left.png';
+import burger from '../images/bars-sort.png';
 
 const init = () => {
     const emblemImage = document.querySelector('.emblem');
@@ -36,7 +42,18 @@ const init = () => {
   convectorsFloorImage.src = convectorsFloor;
   const casingImage = document.querySelector('.casing-image');
   casingImage.src = casing;
-
+  const searchImage = document.querySelector('.search');
+  searchImage.src = search;
+  const basketImage = document.querySelector('.basket-image');
+  basketImage.src = basket;
+  const lineImage = document.querySelector('.line');
+  lineImage.src = line;
+  const heartImage = document.querySelector('.heart');
+  heartImage.src = heart;
+  const linesImage = document.querySelector('.lines');
+  linesImage.src = lines;
+  const burgerImage = document.querySelector('.burger');
+  burgerImage.src = burger;
 };
 
 export default init;
