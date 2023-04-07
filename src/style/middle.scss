@@ -3,17 +3,21 @@
     src: url(../assets/fonts/OpenSans-Medium.ttf);
 }
 @media (min-width:1024px) {
-    .middle {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+  .middle {
+    padding-left: 20px;
+    padding-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 53px;
+  }
     .search-input {
         width: 259px;
         height: 52px;
     }
     .basket {
-        width: 202px;
+        width: 195px;
         height: 53px;
+        margin-left: 20px;
     }
     .shoop-emblem {
         width: 146px;
@@ -26,14 +30,20 @@
     .burger {
         margin-right: 18.5px;
     }
+    .line {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
 }
 @media (min-width: 1400px) {
-    .middle {
-  padding-left: 160px;
-  padding-right: 160px;
+  .middle {
+    padding-left: 160px;
+    padding-right: 150px;
+    margin-top: 28px;
+    margin-bottom: 28px;
     }
     .basket {
-        width: 200px;
+        width: 242px;
         height: 65px;
     }
     .burger {
@@ -58,22 +68,22 @@
         width: 181px;
         height: 65px;
     }
+    .line {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .flex{
     display: flex;
 }
 .middle {
-    margin-top: 28px;
-    margin-bottom: 28px;
     justify-content: space-between;
-
 }
 
 .shoop-emblem {
     background-color: #005DB4;
     color: white;
-
     border-radius: 7px;
     padding-left: 12px;
     justify-content: center;
@@ -84,6 +94,11 @@
     padding-top: 23px;
     padding-bottom: 23px;
     align-items: center;
+    font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 140%;
+color: #005DB4;
 }
 
 .m4 {

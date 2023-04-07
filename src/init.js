@@ -5,7 +5,7 @@ import convectorsFloor from '../images/convectors-floor.png';
 import convectorsIn from '../images/convectors-in.png';
 import convectorsWall from '../images/convectors-wall.png';
 import emblem from '../images/emblem.png';
-import main from '../images/main.png';
+import main from '../images/Frame.png';
 import news from '../images/news.png';
 import percent from '../images/percent.png';
 import steelTube from '../images/steel-tube.png';
@@ -16,12 +16,15 @@ import heart from '../images/heart.png';
 import line from '../images/Line 1.png';
 import lines from '../images/align-left.png';
 import burger from '../images/bars-sort.png';
+import chevron from '../images/chevron-down.png';
 
 const init = () => {
     const emblemImage = document.querySelector('.emblem');
     emblemImage.src = emblem;
-  const mainPic = document.querySelector('.main');
-  mainPic.src = main;
+  // const mainPic = document.querySelector('.main');
+  // mainPic.src = main;
+  // const mainP = document.querySelector('.main-image');
+  // mainP.style.backgroundImage = main;
   const newsImage = document.querySelector('.news-image');
   newsImage.src = news;
   const percentImage = document.querySelector('.percent-image');
@@ -54,6 +57,8 @@ const init = () => {
   linesImage.src = lines;
   const burgerImage = document.querySelector('.burger');
   burgerImage.src = burger;
+  const chevronImage = document.querySelector('.chevron');
+  chevronImage.src = chevron;
 };
 
 export default init;

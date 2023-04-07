@@ -5,10 +5,12 @@
     src: url('../assets/fonts/OpenSans-Regular.ttf');
 }
 @media (min-width: 1024px) {
-    .main {
+    .main-image {
         width: 732px;
         height: 300px;
+        background-size: 732px 300px;
     }
+
     .news-image,
     .sales {
         height: 140px;
@@ -19,23 +21,55 @@
         height: 95px;
     }
     .border {
-        width: 231px;
+        width: 211px;
         height: 110px;
     }
+    .card {
+    margin: 10px;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+    }
+    .card-img {
+        width: 50%;
+        height: auto;
+    }
+    .img-big {
+      width: 45%;
+      height: auto;
+    }
+    .left-none {
+        margin-left: 0;
+    }
+    .right-none {
+        margin-right: 0;
+    }
+    .news {
+        margin-bottom: 21px;
+    }
+   .more {
+    margin-bottom: 30px;
+   }
+   h1 {
+    margin-top: 35px;
+   }
 }
 @media (min-width: 1400px) {
     h5 {
         margin-left: 46px;
     }
-    .main-image,
-    .main {
+    .main-image {
         width: 1193px;
         height: 400px;
+        background-size: 1193px 400px;
     }
-    .sales,
-    .news-image {
+    .sales {
         height: 185px;
         width: 378px;
+    }
+    .news-image {
+        height: 185px;
+        width: auto;
     }
     .percent-image {
         width: 156px;
@@ -43,13 +77,31 @@
     }
     .border {
         height: 140px;
-        width: 378px;
+        width: 358px;
     }
+    .card {
+      margin: 15px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .news {
+        margin-bottom: 31px;
+    }
+    .more {
+        margin-bottom: 33px;
+       }
+       h1 {
+        margin-top: 67px;
+       }
 }
 .flex {
     display: flex;
 }
-
+    .more {
+        border: 1px solid #EAEAEA;
+        border-radius: 5px;
+        padding: 12px 30px;
+    }
 .cards {
     margin-bottom: 191px;
     flex-wrap: wrap;
@@ -63,12 +115,25 @@ border-radius: 10px;
 
 }
 
-.card {
-  margin: 15px;
-  justify-content: space-between;
-  align-items: center;
+.main-image {
+    background-image: url(../../images/Frame.png);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    color: white;
+    align-items: start;
 }
-
+h1 {
+    font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 130%;
+}
+h3 {
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+}
 h5 {
     font-family: 'Open Sans';
 font-style: normal;
@@ -94,12 +159,13 @@ line-height: 130%;
 
 .column {
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .sales {
     background: linear-gradient(270deg, #E9E9E7 32.28%, rgba(233, 233, 231, 0) 45.5%), #F4F3F1;
 border-radius: 15px;
-
+  align-items: center;
 
 }
 
