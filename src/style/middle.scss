@@ -2,7 +2,7 @@
     font-family: 'Open Sans';
     src: url(../assets/fonts/OpenSans-Medium.ttf);
 }
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .middle {
     padding-left: 20px;
     padding-right: 20px;
@@ -35,16 +35,18 @@
         margin-right: 12px;
     }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .middle {
-    padding-left: 160px;
-    padding-right: 150px;
+/*    padding-left: 160px;
+    padding-right: 150px; */
     margin-top: 28px;
     margin-bottom: 28px;
     }
     .basket {
         width: 242px;
         height: 65px;
+/*        padding-left: 16.5px;
+        padding-right: 16.5px; */
     }
     .burger {
         margin-right: 23px;
@@ -90,7 +92,7 @@
     align-items: center;
 }
 
-.padding-23{
+.padding-23 {
     padding-top: 23px;
     padding-bottom: 23px;
     align-items: center;
@@ -118,7 +120,7 @@ color: #005DB4;
 .search-input {
     border-bottom: 1px solid #EAEAEA;
     padding-left: 15px;
-    padding-right: 26px;
+    padding-right: 15px;
     color: #7C7B7B;
     font-family: 'Open Sans';
   font-style: normal;
@@ -151,8 +153,7 @@ font-weight: 300;
 font-size: 14px;
 line-height: 140%;
 color: #A4A4A3;
-padding-left: 16.5px;
-padding-right: 16.5px;
+
 white-space: nowrap;
 }
 .right-middle {
