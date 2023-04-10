@@ -21,12 +21,6 @@ import chevron from '../images/chevron-down.png';
 const init = () => {
     const emblemImage = document.querySelector('.emblem');
     emblemImage.src = emblem;
-  // const mainPic = document.querySelector('.main');
-  // mainPic.src = main;
-  // const mainP = document.querySelector('.main-image');
-  // mainP.style.backgroundImage = main;
-  const newsImage = document.querySelector('.news-image');
-  newsImage.src = news;
   const percentImage = document.querySelector('.percent-image');
   percentImage.src = percent;
   const bimetrImage = document.querySelector('.bimetr-image');

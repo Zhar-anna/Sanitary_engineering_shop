@@ -2,30 +2,42 @@
     font-family: 'Open Sans';
     src: url(../assets/fonts/OpenSans-Medium.ttf);
 }
+@media (min-width: 300px) {
+
+}
 @media (min-width: 1024px) {
   .middle {
-    padding-left: 20px;
-    padding-right: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
         height: 53px;
   }
     .search-input {
-        width: 259px;
+        width: 229px;
         height: 52px;
-    }
-    .basket {
-        width: 195px;
-        height: 53px;
         margin-left: 20px;
     }
-    .shoop-emblem {
-        width: 146px;
+    .basket {
+        width: 228px;
         height: 53px;
+        margin-left: 38px;
+    }
+    .shoop-emblem {
+        width: 134px;
+        height: 53px;
+        padding-left: 12px;
+        font-size: 13px;
+    }
+    .emblem {
+        width: 32px;
+        height: auto;
+        margin-right: 6.54px;
     }
     .catalog {
         width: 148px;
         height: 53px;
+        font-weight: 500;
+        font-size: 13.0829px;
+        margin-left: 20px;
     }
     .burger {
         margin-right: 18.5px;
@@ -37,16 +49,13 @@
 }
 @media (min-width: 1600px) {
   .middle {
-/*    padding-left: 160px;
-    padding-right: 150px; */
     margin-top: 28px;
     margin-bottom: 28px;
     }
     .basket {
         width: 242px;
         height: 65px;
-/*        padding-left: 16.5px;
-        padding-right: 16.5px; */
+        margin-left: 10px;
     }
     .burger {
         margin-right: 23px;
@@ -61,14 +70,23 @@
     .search-input {
         width: 580px;
         height: 66px;
+        margin-left: 30px;
     }
     .shoop-emblem {
         height: 65px;
         width: 181px;
     }
+    .emblem {
+        width: 39.56px;
+    height: 53.83px;
+    margin-right: 8.11px;
+    }
     .catalog {
         width: 181px;
         height: 65px;
+        font-weight: 500;
+        font-size: 16px;
+        margin-left: 30px;
     }
     .line {
         margin-left: 0;
@@ -80,14 +98,14 @@
     display: flex;
 }
 .middle {
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .shoop-emblem {
     background-color: #005DB4;
     color: white;
     border-radius: 7px;
-    padding-left: 12px;
+
     justify-content: center;
     align-items: center;
 }
@@ -110,7 +128,7 @@ color: #005DB4;
 .catalog {
     background-color: #FE5603;
     color: white;
-    margin-left: 30px;
+
     border-radius: 7px;
     border: none;
     justify-content: center;
@@ -126,8 +144,6 @@ color: #005DB4;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  margin-left: 30px;
-
   justify-content: space-between;
   align-items: center;
 }
@@ -135,12 +151,6 @@ color: #005DB4;
 [type='search']{
     border: none;
     outline: none;
-}
-
-.emblem {
-    width: 39.56px;
-height: 53.83px;
-margin-right: 8.11px;
 }
 
 .basket {
@@ -153,7 +163,6 @@ font-weight: 300;
 font-size: 14px;
 line-height: 140%;
 color: #A4A4A3;
-
 white-space: nowrap;
 }
 .right-middle {
