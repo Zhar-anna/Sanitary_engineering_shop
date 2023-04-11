@@ -3,23 +3,146 @@
     src: url(../assets/fonts/OpenSans-Medium.ttf);
 }
 @media (min-width: 300px) {
+    .middle {
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 17px;
+    }
+    .left {
+        margin-bottom: 10px;
+    }
+    .right {
+        justify-content: center;
+        align-items: center;
+    }
+    .mob-tel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        margin-left: 25px;
+    }
+    .more-tel {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #93B8DB;
+        border-radius: 5px;
+        width: 51px;
+        margin-left: 33px;
+    }
+    .bars {
+        width: 14px;
+        height: 16px;
+    }
+  .shoop-emblem,
+  .catalog,
+  .search-input,
+  .basket,
+  .mob-tel,
+  .more-tel {
+    height: 48px;
+  }
+  .shoop-emblem {
+    width: 131px;
+    font-size: 11px;
+  }
+  .emblem {
+    width: 29.11px;
+    height: 39.75px;
+    margin-right: 6px;
+    margin-left: 9.56px;
+  }
+  .catalog,
+  .search-input,
+  .basket {
+    width: 60px;
+  }
+  .basket {
+    color: white;
+    font-size: 0;
+    border: 1px solid #EAEAEA;
+  }
+  .basket-image {
+    margin: 0;
+  }
+    ::placeholder {
+        font-size: 0;
+  }
+  .search-input {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+  }
+  [type='search']{
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+    .padding-23 {
+        padding: 0;
+        justify-content: center;
+        height: 48px;
+        width: 61px;
+        border: 1px solid #EAEAEA;
+        border-radius: 5px;
+    }
 
+  .catalog {
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .tel-heart {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 @media (min-width: 1024px) {
+    .tel-heart {
+        margin: 0;
+    }
+    .left {
+        margin-bottom: 0px;
+    }
+    .mob-tel,
+    .more-tel {
+        display: none;
+    }
   .middle {
+        flex-direction: row;
+        justify-content: center;
         margin-top: 20px;
         margin-bottom: 20px;
         height: 53px;
   }
     .search-input {
+        border: none;
+        flex-direction: row;
+        border-bottom: 1px solid #EAEAEA;
         width: 229px;
         height: 52px;
         margin-left: 20px;
+        justify-content: space-between;
+        align-items: center;
     }
     .basket {
+        border: 1px solid #93B8DB;
         width: 228px;
         height: 53px;
-        margin-left: 38px;
+        margin-left: 30px;
+        color: #A4A4A3;
+        font-size: 14px;
     }
     .shoop-emblem {
         width: 134px;
@@ -31,6 +154,7 @@
         width: 32px;
         height: auto;
         margin-right: 6.54px;
+        margin-left: 0;
     }
     .catalog {
         width: 148px;
@@ -38,7 +162,11 @@
         font-weight: 500;
         font-size: 13.0829px;
         margin-left: 20px;
+        flex-direction: row;
     }
+    ::placeholder {
+        font-size: 16px;
+  }
     .burger {
         margin-right: 18.5px;
     }
@@ -46,16 +174,39 @@
         margin-left: 12px;
         margin-right: 12px;
     }
+        .padding-23 {
+          width: 30px;
+          border: none;
+    }
+        .line {
+        display: flex;
+        width: 1px;
+    }
+    .basket-image {
+        margin-right: 12px;
+    }
 }
 @media (min-width: 1600px) {
+    .left {
+        margin-bottom: 0px;
+    }
+    .mob-tel,
+    .more-tel {
+        display: none;
+    }
   .middle {
+    justify-content: center;
+    flex-direction: row;
     margin-top: 28px;
     margin-bottom: 28px;
     }
     .basket {
+        border: 1px solid #93B8DB;
         width: 242px;
         height: 65px;
         margin-left: 10px;
+        color: #A4A4A3;
+        font-size: 14px;
     }
     .burger {
         margin-right: 23px;
@@ -71,6 +222,9 @@
         width: 580px;
         height: 66px;
         margin-left: 30px;
+        border-bottom: 1px solid #EAEAEA;
+        justify-content: space-between;
+        align-items: center;
     }
     .shoop-emblem {
         height: 65px;
@@ -92,33 +246,35 @@
         margin-left: 0;
         margin-right: 0;
     }
+    .padding-23 {
+        border: none;
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+    .basket-image {
+        margin-right: 12px;
+    }
 }
 
 .flex{
     display: flex;
-}
-.middle {
-    justify-content: center;
 }
 
 .shoop-emblem {
     background-color: #005DB4;
     color: white;
     border-radius: 7px;
-
     justify-content: center;
     align-items: center;
 }
 
 .padding-23 {
-    padding-top: 23px;
-    padding-bottom: 23px;
     align-items: center;
     font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 140%;
-color: #005DB4;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    color: #005DB4;
 }
 
 .m4 {
@@ -128,7 +284,6 @@ color: #005DB4;
 .catalog {
     background-color: #FE5603;
     color: white;
-
     border-radius: 7px;
     border: none;
     justify-content: center;
@@ -136,16 +291,11 @@ color: #005DB4;
 }
 
 .search-input {
-    border-bottom: 1px solid #EAEAEA;
-    padding-left: 15px;
-    padding-right: 15px;
     color: #7C7B7B;
     font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 [type='search']{
@@ -154,22 +304,16 @@ color: #005DB4;
 }
 
 .basket {
-    border: 1px solid #93B8DB;
+
     border-radius: 5px;
     justify-content: center;
     align-items: center;
     font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 140%;
-color: #A4A4A3;
-white-space: nowrap;
+    font-weight: 300;
+    line-height: 140%;
+    white-space: nowrap;
 }
 .right-middle {
     justify-content: space-between;
     align-items: center;
-}
-
-.basket-image {
-    margin-right: 12px;
 }
