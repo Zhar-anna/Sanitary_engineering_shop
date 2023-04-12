@@ -13,6 +13,7 @@
         margin-bottom: 10px;
     }
     .right {
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
@@ -77,6 +78,7 @@
         font-size: 0;
   }
   .search-input {
+    cursor: pointer;
     margin-left: 10px;
     margin-right: 10px;
     justify-content: center;
@@ -130,7 +132,7 @@
         border: none;
         flex-direction: row;
         border-bottom: 1px solid #EAEAEA;
-        width: 229px;
+        width: 259px;
         height: 52px;
         margin-left: 20px;
         justify-content: space-between;
@@ -164,6 +166,9 @@
         margin-left: 20px;
         flex-direction: row;
     }
+    [type='search']{
+        display: flex;
+      }
     ::placeholder {
         font-size: 16px;
   }

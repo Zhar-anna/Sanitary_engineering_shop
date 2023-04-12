@@ -16,6 +16,7 @@ import lines from '../images/align-left.png';
 import burger from '../images/bars-sort.png';
 import chevron from '../images/chevron-down.png';
 import bars from '../images/bars.png';
+import close from '../images/xmark.png';
 
 const init = () => {
   const emblemImage = document.querySelector('.emblem');
@@ -54,6 +55,24 @@ const init = () => {
   chevronImage.src = chevron;
   const barsImage = document.querySelector('.bars');
   barsImage.src = bars;
+  const closeImage = document.querySelector('.close-image');
+  closeImage.src = close;
+  const searcModalImage = document.querySelector('.search-modal');
+  searcModalImage.src = search;
+
+
+  const modalSearch = document.querySelector('.modal-1');
+   modalSearch.style.display = 'none';
+  const searchEvent = document.querySelector('.forma');
+  searchEvent.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalSearch.style.display = 'flex';
+  });
+  const closeEvent = document.querySelector('.close');
+  closeEvent.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalSearch.style.display = 'none';
+  })
 };
 
 export default init;

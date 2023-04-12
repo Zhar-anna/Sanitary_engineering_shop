@@ -57,7 +57,7 @@
  }
   .news {
     margin-bottom: 20px;
-    width: 323px;
+    width: 343px;
     height: 146px;
     background-size: 340px 146px;  
         h2,
@@ -110,13 +110,18 @@
     .card {
         justify-content: space-between;
         align-items: center;
-        padding-left: 20px;
     }
     .card-img {
         width: 45%;
-        height: auto;
+/*        height: auto; */
     }
     .img-1 {
+        width: 100px;
+        height: 70px;
+        overflow: hidden;
+    }
+    .img-5,
+    .img-2 {
         width: 40%;
     }
     .news {
@@ -152,6 +157,7 @@
    .card-min {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 231px;
     }
   .margin-left {
     margin-left: 20px;
@@ -175,9 +181,9 @@
         margin-right: 185px;
     }
     .main-image {
-        width: 1173px;
+        width: 1193px;
         height: 400px;
-        background-size: 1193px 378px;
+        background-size: 1193px 400px;
     }
     .sales {
         height: 185px;
@@ -188,16 +194,12 @@
         height: 134px;
         margin-right: 45px;
     }
-    .border {
-        height: 140px;
-        width: 358px;
-    }
     .card {
         justify-content: space-between;
         align-items: center;
     }
     .news {
-        margin-bottom: 31px;
+        margin-bottom: 30px;
         padding-left: 35px;
         background-size: 378px 185px;
         height: 185px;
@@ -205,6 +207,7 @@
     }
     .more {
         margin-bottom: 33px;
+        margin-left: 37px;
     }
     h1 {
         margin-top: 67px;
@@ -216,11 +219,25 @@
     .card-min {
         margin-top: 15px;
         margin-bottom: 15px;
+        width: 378px;
+        height: 140px;
     }
     .margin-left {
         margin-left: 30px;
     }
-
+    .img-1,
+    .img-2 {
+        width: 50%;
+        height: auto;
+    }
+    .img-7,
+    .img-4,
+    .img-6 {
+        width: 40%;
+    }
+    .img-8 {
+        width: 35%;
+    }
 }
 .flex {
     display: flex;
@@ -248,7 +265,6 @@ border-radius: 10px;
 
 }
 .news {
-  /*  background: linear-gradient(90deg, #EEEEEE 42.06%, rgba(238, 238, 238, 0) 60.05%), url(../../images/news.png);*/
     background-image: url(../../images/news.png);
     background-repeat: no-repeat; 
     flex-direction: column;
