@@ -17,6 +17,7 @@ import burger from '../images/bars-sort.png';
 import chevron from '../images/chevron-down.png';
 import bars from '../images/bars.png';
 import close from '../images/xmark.png';
+import chevronRight from '../images/chevron-right.png';
 
 const init = () => {
   const emblemImage = document.querySelector('.emblem');
@@ -59,14 +60,17 @@ const init = () => {
   closeImage.src = close;
   const searcModalImage = document.querySelector('.search-modal');
   searcModalImage.src = search;
-
+  const chvronRImage = document.querySelectorAll('.chevron-right');
+  chvronRImage.forEach((ch) => {
+    ch.src = chevronRight;
+  });
 
   const modalSearch = document.querySelector('.modal-1');
    modalSearch.style.display = 'none';
   const searchEvent = document.querySelector('.forma');
   searchEvent.addEventListener('click', (e) => {
     e.preventDefault();
-    if (window.innerWidth > 400) {
+    if (window.innerWidth > 1024) {
       modalSearch.style.display = 'none';
     } else {
       modalSearch.style.display = 'flex';
@@ -76,7 +80,25 @@ const init = () => {
   closeEvent.addEventListener('click', (e) => {
     e.preventDefault();
     modalSearch.style.display = 'none';
-  })
+  });
+
+  const modalCatalog = document.querySelector('.modal-2');
+  modalCatalog.style.display = 'none';
+  const catalogButton = document.querySelector('.catalog');
+  catalogButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (window.innerWidth > 1024) {
+      modalCatalog.style.display = 'none';
+    }
+    else {
+      modalCatalog.style.display = 'flex';
+    }
+  });
+  modalCatalog.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    modalCatalog.style.display = 'none';
+  });
 };
 
 export default init;
