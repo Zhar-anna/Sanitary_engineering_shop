@@ -66,7 +66,11 @@ const init = () => {
   const searchEvent = document.querySelector('.forma');
   searchEvent.addEventListener('click', (e) => {
     e.preventDefault();
-    modalSearch.style.display = 'flex';
+    if (window.innerWidth > 400) {
+      modalSearch.style.display = 'none';
+    } else {
+      modalSearch.style.display = 'flex';
+    }
   });
   const closeEvent = document.querySelector('.close');
   closeEvent.addEventListener('click', (e) => {
