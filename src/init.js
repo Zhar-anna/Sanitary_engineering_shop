@@ -18,6 +18,7 @@ import chevron from '../images/chevron-down.png';
 import bars from '../images/bars.png';
 import close from '../images/xmark.png';
 import chevronRight from '../images/chevron-right.png';
+import headset from '../images/headset.png';
 
 const init = () => {
   const emblemImage = document.querySelector('.emblem');
@@ -56,14 +57,16 @@ const init = () => {
   chevronImage.src = chevron;
   const barsImage = document.querySelector('.bars');
   barsImage.src = bars;
-  const closeImage = document.querySelector('.close-image');
-  closeImage.src = close;
+  const closeImage = document.querySelectorAll('.close-image');
+  closeImage.forEach((cl) => cl.src = close);
   const searcModalImage = document.querySelector('.search-modal');
   searcModalImage.src = search;
   const chvronRImage = document.querySelectorAll('.chevron-right');
   chvronRImage.forEach((ch) => {
     ch.src = chevronRight;
   });
+  const headsetImage = document.querySelector('.headset');
+  headsetImage.src = headset;
 
   const modalSearch = document.querySelector('.modal-1');
    modalSearch.style.display = 'none';
@@ -98,6 +101,24 @@ const init = () => {
     e.preventDefault();
     e.stopPropagation();
     modalCatalog.style.display = 'none';
+  });
+
+  const modalInformation = document.querySelector('.modal-3');
+  modalInformation.style.display = 'none';
+  const infoButton = document.querySelector('.more-tel');
+  infoButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (window.innerWidth > 1024) {
+      modalInformation.style.display = 'none';
+    }
+    else {
+      modalInformation.style.display = 'flex';
+    }
+  });
+  modalInformation.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    modalInformation.style.display = 'none';
   });
 };
 
